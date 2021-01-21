@@ -23,6 +23,10 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="login.php">Iniciar sesión</a>
                     </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="registroC_form.php">Registrarse</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="carrito.php">Carrito</a>
                     </li>
