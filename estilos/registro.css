@@ -1,0 +1,34 @@
+h2 , p{
+    text-align: center;
+    color: #840424;
+}
+.form button{
+    width: 150px;
+    margin-top: 20px;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+}
+.form{
+    background: #dee9ea;
+}
+.form-hijo{ 
+    width: 380px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.input label{
+    color: #3c8cd4;
+    font-weight: bold;
+    padding-top: 20px;
+    width: 30%;
+    margin-left: 15px;
+}
+.input input{
+    margin-top: 15px;
+    width: 60%;
+    float: right;
+    margin-right: 20px;
+}

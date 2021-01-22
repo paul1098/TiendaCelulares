@@ -12,7 +12,6 @@
 require('conexion.php');
 
 
-  
   $nombreC = $_POST['nombreC'];
   $apellidoC = $_POST['apellidoC'];
   $dirección = $_POST['dirección'];
@@ -22,27 +21,17 @@ require('conexion.php');
   $contraseña = $_POST['contraseña'];
   $estado = 'A';
 
-
-
-
 $sql = "INSERT INTO cliente ( nombreC, apellidoC, dirección , correo, celular, DNI, contraseña, estado)
 VALUES ('$nombreC', '$apellidoC', '$dirección',  '$correo','$celular', '$DNI', '$contraseña', '$estado')";
-
 
 
 if (mysqli_query($conn, $sql)) {
     echo " Datos grabados satisfactoriamente
 <br><br> 
 <tr >
-    <td><a class='btn btn-success' href='TiendaCelulares/login.php'>Atrás</a></td>
+    <td><a class='btn btn-success' href='../login.php'>Atrás</a></td>
  </tr>"
 ;
-
-
-  
-
-
-
 
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);

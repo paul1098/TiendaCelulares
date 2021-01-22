@@ -1,5 +1,23 @@
+/* Estilos para el menú */
 .menu .navbar-nav .nav-link {
-    color: red;
-    font-size: 25px;
-   
+    color:#840424;
+    font-size: 25px;  
 }
+.img img {
+    width: 250px;
+}
+.navbar-light .navbar-nav .active>.nav-link {
+    color:#604458;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color:  #604458;
+    transition: all .6s;
+}
+.navbar-toggler {
+    background: #604458;
+}
+.menu{
+    background: white;
+    position: sticky;
+}
+
