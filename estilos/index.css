@@ -21,3 +21,34 @@
     position: sticky;
 }
 
+
+
+/* Estilos para el footer */
+
+.main-footer{
+	background: #222;
+	color: white;
+	padding:  10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: .8em;
+}
+.copy {
+	text-align: center;
+	margin: auto;
+	margin-top: 15px;
+}
+
+.main-footer[class*="icon-"]{
+	color: white
+	text-decoration: none;
+}	
+
+.main-footer [class*="icon-"]:before{
+	position: relative;
+	top: 3px;
+	right: 5px;
+
+
+}
+

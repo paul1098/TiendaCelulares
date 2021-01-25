@@ -98,4 +98,27 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
+
+ <!-- Pie de página-->
+
+<footer class="main-footer">
+    <div class="container container--flex">
+        <div class="column column--33">
+           <h2 class="column__title">ACERCA DE MIPHONE</h2>
+           <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+        </div>
+        <div class="column column--33">
+           <h2 class="column__title">Contáctanos</h2>
+           <p class="column__txt">Teléfono: 999-999-999</p>
+           <p class="column__txt">consultas@miphone.com</p> 
+        </div>
+        <div class="column column--33">
+           <h2 class="column__title">Síguenos en nuestras redes</h2>
+           <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p>
+           <p class="column__txt"><a href="" class="icon-twitter">Síguenos en Twiter</a></p>
+           <p class="column__txt"><a href="" class="icon-yotube">Visita nuestro canal</a></p>
+        </div>
+        <p class="copy">© 2021 - MiPhone.pe | Todos los derecho reservados </p>    
+    </div>    
+</footer>
 </html>

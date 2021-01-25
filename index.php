@@ -33,8 +33,8 @@
                 </ul>
             </div>
         </div>
-    </nav>
 
+    </nav>
     <!-- Carrousel de imagenes -->
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -69,5 +69,107 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+ <!-- mostrar produtos-->
+ <!--<section class="">
+    <h2 class="">Nuestros productos</h2>
+    <div class="">
+        <div class="">
+            <img src="img/" alt="" class="">
+            <div class="">nombre </div>
+            <div class="">precio</div>
+        </div>
+    </div>
+    <div class="">
+        <div class="">
+            <img src="img/" alt="" class="">
+            <div class="">nombre </div>
+            <div class="">precio</div>
+        </div>
+    </div>
+    <div class="">
+        <div class="">
+            <img src="img/" alt="" class="">
+            <div class="">nombre </div>
+            <div class="">precio</div>
+        </div>
+    </div>
+
+
+
+</section>-->
+
+<?php include("diseños/_main-header.php"); ?>
+  
+  <script type="text/javascript" src="js/main-scripts.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $.ajax({
+        url:'servicios/producto/get_all_products.php',
+        type:'POST',
+        data:{},
+        success:function(data){
+          console.log(data);
+          let html='';
+          for (var i = 0; i < data.datos.length; i++) {
+            html+=
+            '<div class="product-box">'+
+              '<a href="producto.php?p='+data.datos[i].codpro+'">'+
+                '<div class="product">'+
+                  '<img src="assets/products/'+data.datos[i].marpro+'">'+
+                  '<div class="detail-title">'+data.datos[i].nompro+'</div>'+
+                  '<div class="detail-description">'+data.datos[i].despro+'</div>'+
+                  '<div class="detail-price">'+formato_precio(data.datos[i].prepro)+'</div>'+
+                '</div>'+
+              '</a>'+
+            '</div>';
+          }
+          document.getElementById("space-list").innerHTML=html;
+        },
+        error:function(err){
+          console.error(err);
+        }
+      });
+    });
+    function formato_precio(valor){
+      //10.99
+      let svalor=valor.toString();
+      let array=svalor.split(".");
+      return "S/. "+array[0]+".<span>"+array[1]+"</span>";
+    }
+  </script>
+
+
+
+
+
+
+
+
+ <!-- Pie de página-->
+
+<footer class="main-footer">
+    <div class="container container--flex">
+        <div class="column column--33">
+           <h2 class="column__title">ACERCA DE MIPHONE</h2>
+           <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+        </div>
+        <div class="column column--33">
+           <h2 class="column__title">Contáctanos</h2>
+           <p class="column__txt">Teléfono: 999-999-999</p>
+           <p class="column__txt">consultas@miphone.com</p> 
+        </div>
+        <div class="column column--33">
+           <h2 class="column__title">Síguenos en nuestras redes</h2>
+           <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p>
+           <p class="column__txt"><a href="" class="icon-twitter">Síguenos en Twiter</a></p>
+           <p class="column__txt"><a href="" class="icon-yotube">Visita nuestro canal</a></p>
+        </div>
+        <p class="copy">© 2021 - MiPhone.pe | Todos los derecho reservados </p>    
+    </div>    
+</footer>
 </body>
+
+
+
 </html>
