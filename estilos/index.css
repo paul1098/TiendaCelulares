@@ -1,7 +1,7 @@
 /* Estilos para el menú */
 .menu .navbar-nav .nav-link {
     color:#840424;
-    font-size: 25px;  
+    font-size: 20px;  
 }
 .img img {
     width: 250px;
@@ -20,35 +20,73 @@
     background: white;
     position: sticky;
 }
-
-
+body{
+    margin-bottom: -20px;
+}
 
 /* Estilos para el footer */
 
-.main-footer{
-	background: #222;
-	color: white;
-	padding:  10px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	font-size: .8em;
+footer .titulos , .texto, .copy{
+    text-align: center;
+    color: white;
 }
-.copy {
-	text-align: center;
-	margin: auto;
-	margin-top: 15px;
+footer{
+    padding-top: 25px;
+    background:  #840424;
 }
 
-.main-footer[class*="icon-"]{
-	color: white
-	text-decoration: none;
-}	
+/* Estilos redes sociales */
 
-.main-footer [class*="icon-"]:before{
-	position: relative;
-	top: 3px;
-	right: 5px;
-
-
+footer h4{
+    color: ;
+    text-align: center;
 }
+
+footer .redes-sociales .contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes-sociales a {
+    color: white;
+    text-align: center;
+    width: 100px;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+footer .Whatsapp:hover {
+    background: green;
+    transition: all .6s;
+}
+
+footer .Facebook:hover {
+    background: #3b5998;
+    transition: all .6s;
+}
+
+footer .Instagram:hover {
+    background: #f56040;
+    transition: all .6s;
+}
+
+
+/* estilos para carrousel */
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23840424' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    background-size: 30px;
+}
+
+.carousel-control-next-icon {
+    background-size: 30px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23840424' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+.carousel-indicators li {
+    background-color: #840424;
+}
+
+
 

@@ -91,34 +91,40 @@
   </div>
   </div>
 
+<!-- Pie de página-->
 
+<footer class="footer">
+    <div class="container">
+        <div class="">
+           <h3 class="titulos">ACERCA DE MIPHONE</h3>
+           <p class="texto">MiPhone.pe es una empresa con más de 9 años de experiencia en el mercado ofreciendo productos de primera calidad al mejor precio.
+           Cuenta con un equipo de venta que podrá asesorar tu compra y para mayor comodidad te ofrecemos el servicio de Delivery a toda la provincia de Lima.
+           Apostamos a ser líder en el mercado en los próximos años diferenciándonos en la calidad de nuestro servicio, puntualidad y cordialidad.
+           </p> 
+        </div>
+        <div class="">
+           <h3 class="titulos">Contáctanos</h3>
+           <p class="texto">Teléfono: 999-999-999</p>
+           <p class="texto">consultas@miphone.com</p> 
+        </div>
+        <section class="redes-sociales">
+            <h3 class="titulos">Nuestras Redes Sociales</h3>
+            <div class="contenedor">
+                <a href="https://www.facebook.com" target="blank" class="Facebook"><i
+                        class="fa fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com" target="blank" class="Instagram"><i
+                        class="fa fa-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?phone" target="blank" class="Whatsapp"><i
+                        class="fa fa-whatsapp"></i></a>
+            </div>
+        </section>
+        <p class="copy">© 2021 - MiPhone.pe | Todos los derecho reservados </p>    
+    </div>    
+</footer>
 
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
-
- <!-- Pie de página-->
-
-<footer class="main-footer">
-    <div class="container container--flex">
-        <div class="column column--33">
-           <h2 class="column__title">ACERCA DE MIPHONE</h2>
-           <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
-        </div>
-        <div class="column column--33">
-           <h2 class="column__title">Contáctanos</h2>
-           <p class="column__txt">Teléfono: 999-999-999</p>
-           <p class="column__txt">consultas@miphone.com</p> 
-        </div>
-        <div class="column column--33">
-           <h2 class="column__title">Síguenos en nuestras redes</h2>
-           <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p>
-           <p class="column__txt"><a href="" class="icon-twitter">Síguenos en Twiter</a></p>
-           <p class="column__txt"><a href="" class="icon-yotube">Visita nuestro canal</a></p>
-        </div>
-        <p class="copy">© 2021 - MiPhone.pe | Todos los derecho reservados </p>    
-    </div>    
-</footer>
 </html>

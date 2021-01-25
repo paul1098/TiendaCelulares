@@ -1,16 +1,7 @@
-<?php session_start(); ?>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8"/>
-<link href="CSS/registro.css" rel="stylesheet" type="text/css"/>
-<title> </title>
-</head>
-<body>
-  <div class="container">
-<?php
-require('conexion.php');
+<?php 
 
+require('conexion.php');
+session_start();
 
   $nombreC = $_POST['nombreC'];
   $apellidoC = $_POST['apellidoC'];
@@ -26,12 +17,8 @@ VALUES ('$nombreC', '$apellidoC', '$dirección',  '$correo','$celular', '$DNI', 
 
 
 if (mysqli_query($conn, $sql)) {
-    echo " Datos grabados satisfactoriamente
-<br><br> 
-<tr >
-    <td><a class='btn btn-success' href='../login.php'>Atrás</a></td>
- </tr>"
-;
+    
+    header("location:ty.php");
 
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
@@ -40,4 +27,3 @@ if (mysqli_query($conn, $sql)) {
 mysqli_close($conn);
 ?> 
 
-<br>
