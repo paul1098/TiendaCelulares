@@ -18,7 +18,7 @@
         $_SESSION['username'] = $correo;
         header("location:../index.php");
     }else{
-        echo "Datos incorrectos";
+        header("location: errorLogeo.php");
     }
 
 ?>

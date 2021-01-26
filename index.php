@@ -39,7 +39,7 @@ if(!isset($correo)){
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="carrito.php"><i class="fas fa-shopping-cart"></i> Carrito</a>
+                        <a class="nav-link" href="carrito.php"><i class="fas fa-shopping-cart"></i> Carrito(0)</a>
                     </li>
                     
                 </ul>
