@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8c68426a6c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="estilos/index.css">
+    <link rel="stylesheet" href="estilos/portada.css">
     <link rel="stylesheet" href="estilos/registro.css">
     <title>Registro de usuario</title>
 </head>
@@ -15,7 +15,7 @@
 <!-- MENÚ DE NAVEGACIÓN -->
 <nav class="menu navbar sticky-top navbar-expand-md navbar-light">
         <div class="container">
-            <a class="img navbar-brand" href="index.php"><img src="assets/contenido/logo1.png" alt=""></a>
+            <a class="img navbar-brand" href="portada.php"><img src="assets/contenido/logo1.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php"><i class="fas fa-sign-in-alt"></i> Iniciar sesión</a>
+                        <a class="nav-link" href="index.php"><i class="fas fa-sign-in-alt"></i> Iniciar sesión</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="registroC_form.php"><i class="fas fa-user"></i> Registrarse</a>
@@ -42,7 +42,7 @@
 
   <div class="form">
   <h2>Crear una cuenta</h2>
-  <p>¿Ya tiene una cuenta? <a href="login.php">Inicie sesión</a></p>
+  <p>¿Ya tiene una cuenta? <a href="index.php">Inicie sesión</a></p>
   <div class="form-hijo">
   <form class="form-horizontal" action="servicios/RegistrarC.php" method="POST">
 

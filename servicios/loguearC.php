@@ -16,9 +16,9 @@
 
     if($array['contar']>0){
         $_SESSION['username'] = $correo;
-        header("location:../index.php");
+        header("location:../portada.php");
     }else{
-        header("location: errorLogeo.php");
+        echo "Datos incorrectos";
     }
 
 ?>

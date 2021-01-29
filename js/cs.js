@@ -8,6 +8,6 @@ Swal.fire({
     confirmButtonText:`OK`
   }).then((result) => {
     if (result.value) {
-      window.location.href = `../login.php`
+      window.location.href = `../index.php`
     }
   }); 

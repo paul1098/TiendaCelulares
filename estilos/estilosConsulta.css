@@ -1,0 +1,35 @@
+body {
+    background: url(images/fondo.png);
+    background-size: cover;
+}
+.caja{
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    ;
+}
+.editar{
+    font-size: 25px;
+    color: blue;
+}
+.eliminar{
+    font-size: 25px;
+    color: red;
+}
+.imagen{
+    font-size: 25px;
+    color: green;
+}
+button{
+    display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 150px;
+  cursor: pointer;
+  margin: 5px;
+}
